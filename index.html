@@ -14,26 +14,34 @@
 	body {
 		background-color: hsl(212, 45%, 89%);
 	  	font-family: "Outfit", sans-serif; }
+	  
+	div {
+		margin: auto; 
+		position: fixed;
+		top: 50%;
+     	left: 50%;
+     	transform: translate(-50%, -50%); }
+	  
+	  /* Classes */
+	  
     	.attribution { font-size: 11px; text-align: center; padding-top: 15px; }
 		.attribution a { color: hsl(228, 45%, 44%); }
-	/* ID for content */
+
+	  /* ID for content */
 	#qrcode {
-		margin: auto;
 		background-color: hsl(0, 0%, 100%);
 		border-radius: 20px;
 		width: 300px;
 		text-align: center;
-		padding: 15px; 
-	    position: fixed;
-		top: 50%;
-     	left: 50%;
-     	transform: translate(-50%, -50%);}
+		padding: 15px; }
+	
 	#qrcodeimage {
 		display: block;
 		margin: auto;
 		width: 300px;
 		border-radius: 15px; }
-	/* Text Styling */
+	  
+	  /* Text Styling */
 	p {
 		padding-left: 10px;
 		padding-right: 10px;
@@ -48,14 +56,16 @@
 </head>
 <body>
   <!--Content HTML START-->
-  <div id="qrcode">
-  <img src="./Images/image-qr-code.png" alt="" id="qrcodeimage">
-  <h1>Improve your front-end skills by building projects</h1>
-  <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
-  </div>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="http://www.starlitdream.com/">Cassandra Ziesman</a>.
-  </div>
+	<div>
+	  <section id="qrcode">
+		<img src="./Images/image-qr-code.png" alt="" id="qrcodeimage">
+		<h1>Improve your front-end skills by building projects</h1>
+		<p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+	  </section>
+	  <section class="attribution">
+		Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+		Coded by <a href="http://www.starlitdream.com/">Cassandra Ziesman</a>.
+	  </section>
+	</div>
 </body>
 </html>
